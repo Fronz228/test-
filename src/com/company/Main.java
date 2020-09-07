@@ -28,7 +28,7 @@ public class Main {
         int fast = ParseToInt(temp);
 
         if(fast == 1){
-            Medicine Film1 = new Medicine();
+            Film Film1 = new Film();
             System.out.println("Введите название фильма");
             Film1.Name = in.nextLine();
 
@@ -41,7 +41,7 @@ public class Main {
             System.out.println("Введите рейтинг фильма (от 0 до 10)");
             temp = in.nextLine();
             fast = ParseToInt(temp);
-            /*Film1.level = new Medicine.Level(fast);*/
+            /*Film1.level = new Film.Level(fast);*/
 
 
             System.out.println("Введите кол - во просмотра  фильма");
@@ -78,14 +78,14 @@ public class Main {
 
 
 
-    public Medicine.Level Level(int num) {
-        Medicine.Level result = Medicine.Level.LOW;
+    public Film.Level Level(int num) {
+        Film.Level result = Film.Level.LOW;
 
 
         if (num > 7) {
-            result = Medicine.Level.HIGH;
+            result = Film.Level.HIGH;
         } else if (num > 4) {
-            result = Medicine.Level.MEDIUM;
+            result = Film.Level.MEDIUM;
         }
 
         return result;

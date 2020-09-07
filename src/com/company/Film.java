@@ -1,6 +1,6 @@
 package com.company;
 
-public class Medicine {
+public class Film {
     String Name, Director, Actor, Date;
     int views;
     enum Level {
@@ -11,9 +11,9 @@ public class Medicine {
     Level level;
 
 
-    public Medicine(){}
+    public Film(){}
 
-    public Medicine(String Name, String Director, String Actor, String Date, int Raiting, int views){
+    public Film(String Name, String Director, String Actor, String Date, int Raiting, int views){
         this.Name = Name;
         this.Director = Director;
         this.Actor = Actor;
